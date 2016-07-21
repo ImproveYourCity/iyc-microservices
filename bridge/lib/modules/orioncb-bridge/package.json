@@ -1,0 +1,6 @@
+{
+  "name": "orionContextBrokerBridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bridge between IYC and Orion Context Broker"
+}

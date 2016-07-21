@@ -1,0 +1,22 @@
+{
+  "server": {
+    "app": {
+      "slogan": "IYC - Orion Context Broker API Bridge"
+    }
+  },
+  "connections": [
+    {
+      "host": "0.0.0.0",
+      "port": 8026,
+      "labels": [
+        "api",
+        "transformer"
+      ]
+    }
+  ],
+  "plugins": {
+    "./vendor-indicators-orioncb-bridge": null,
+    "./vendor-widgets-orioncb-cometsth-bridge": null,
+    "./sgrsa-gis-plsql-bridge": null
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contextbroker": {
+    "protocol": "https",
+    "hostname": "ip_address",
+    "port": "port",
+    "has_auth": true
+  },
+  "auth_server": {
+    "protocol": "http|https",
+    "hostname": "ip_address",
+    "port": "port",
+    "data": {
+      "auth": {
+        "identity": {
+          "password": {
+            "user": {
+              "domain": {
+                "name": "domain_name"
+              },
+              "name": "user",
+              "password": "password"
+            }
+          }
+        },
+        "scope": {
+          "project": {
+            "domain": {
+              "name": "domain_name"
+            },
+            "name": "folder"
+          }
+        }
+      }
+    }
+  }
+}

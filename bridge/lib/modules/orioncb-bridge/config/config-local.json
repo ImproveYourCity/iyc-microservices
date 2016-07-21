@@ -1,0 +1,8 @@
+{
+  "contextbroker": {
+    "protocol": "http",
+    "hostname": "orion",
+    "port": "1026",
+    "has_auth": false
+  }
+}

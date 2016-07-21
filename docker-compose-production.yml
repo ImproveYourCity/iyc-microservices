@@ -1,0 +1,33 @@
+# https://hub.docker.com/r/fiware/orion/
+#orion:
+#  image: fiware/orion
+#  links:
+#    - mongo
+#  ports:
+#    - "0.0.0.0:1026:1026"
+#  expose:
+#    - "1026"
+#  command: -dbhost mongo
+
+#mongo:
+#  image: mongo:2.6
+
+bridge:
+  image: node:0.12
+#  links:
+#    - orion
+#  ports:
+#    - "0.0.0.0:8026:8026"
+  expose:
+    - "8026"
+  volumes:
+    - ./bridge:/var/www
+    - ./entrypoint.sh:/entrypoint.sh
+  environment:
+    TELEFONICA_ENV: production
+    # TELEFONICA_ENV: preproduction
+    # TELEFONICA_ENV: integration
+    # TELEFONICA_ENV: local
+  entrypoint:
+    - /entrypoint.sh
+  working_dir: /var/www

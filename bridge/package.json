@@ -1,0 +1,25 @@
+{
+  "name": "mtc-orion-bridge",
+  "version": "1.0.0",
+  "description": "Bridge between Improve Your City and third party systems",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "bridge",
+    "fiware",
+    "iyc",
+    "orion"
+  ],
+  "author": "Fernando Moro",
+  "license": "ISC",
+  "dependencies": {
+    "glue": "^2.1.1",
+    "hapi": "^8.8.1",
+    "node-rest-client": "^1.5.1",
+    "winston": "^1.1.1",
+    "yargs": "^3.26.0"
+  }
+}
